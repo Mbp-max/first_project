@@ -14,21 +14,14 @@
       <h2>GOAL RATER</h2>
       <h3>HOT OR NOT</h3>
     </header>
-    <form id="new-mountain" style="display: none">
-      <label>Name:</label>
-      <input type="text" name="name" id="name" /> <br />
-      <label>Location:</label>
-      <input type="text" name="location" id="location" /> <br />
-      <label>Image Url:</label>
-      <input type="text" name="image" id="image" /> <br />
-      <input type="submit" value="Create Mountain" />
-    </form>
+    
     <div id="main-gif">
-      <p> </p>
+      <header> SELECTED GOAL FOR YOU </header>
       <img
         id="goalgif"
         src=" " 
-        width="720"
+        width="889"
+        height="550"
       />
       <button id="like-button">
         <span id="like"></span>
@@ -38,14 +31,25 @@
         <span id= "dislike"></span>
         👎
       </button>
+      <button id="laugh-button" onclick=alertFunction()>
+        <span id="laugh"></span>
+        NOT A GOAL!
+      </button>
+
       <h5 id="caption">LOOK AT THIS GEM!</h5>
-      <p id="something">Something should be here</p>
+      <p id="something">⬇️Drop Your Thoughts On The Comment Section Below⬇️</p>
     </div>
-    <div>
-      <h4>Your Liked Goals</h4>
-      <ul id="goal-list">
-        
-      </ul>
+    <form id="comment-form">
+      <label>Username:</label><br>
+      <input type="text" id="username"><br>
+      <label for="comment">Comment: </label><br>
+      <input type="text" id="comment-box"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+    <div id='comment-section'></div>
+
+    <div id = "gif-container">
     </div>
+  
   </body>
 </html>
