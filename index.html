@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="index.js"></script>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" rel=/>
-    <title>GOAL RATER</title>
-  </head>
-  <body>
-    <header style="background-image: url(https://fistf.com/wp-content/uploads/2017/08/cropped-UEFA-Champions-League-Stadium-Wallpaper-1.jpg);" height="662" width="1920">
-      
-      <h2>GOAL RATER</h2>
-      <h3>HOT OR NOT</h3>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="index.js"></script>
+  <link rel="stylesheet" href="index.css" rel= />
+  <title>GOAL RATER</title>
+</head>
+
+<body>
+  <audio  name="media" controls autoplay>
+  <source src="https://fcsongs.com/uploads/audio/UEFA%20Champions%20League%20-%20Main%20Theme.mp3"
+    type="audio/mpeg"> </audio>
+
+  <header class="titleBackground" style="background-image: url(https://fistf.com/wp-content/uploads/2017/08/cropped-UEFA-Champions-League-Stadium-Wallpaper-1.jpg)" height="628" max-width="1820">
+    <h2>GOAL RATER</h2>
+    <h3>🔥 HOT OR NOT 🧊</h3>
+  </header>
+  <div class="containerForAll">
+    <div id="gif-container" class="left"> Goals You've Liked
+    </div>
     
-    <div id="main-gif">
-      <header> SELECTED GOAL FOR YOU </header>
-      <img
-        id="goalgif"
-        src=" " 
-        width="889"
-        height="550"
-      />
-      <button id="like-button">
+    <h1 id="middleContainer">
+      <div >
+      <header id="header">⚽ SELECTED GOAL FOR YOU ⚽</header>
+      <img id="goalgif" src=" " width= "1020" height="600" />
+      <button id="like-button" class="button">
         <span id="like"></span>
-        👍
+        🔥
       </button>
-      <button id="dislike-button">
-        <span id= "dislike"></span>
-        👎
+      <button id="dislike-button" class="button">
+        <span id="dislike"></span>
+        🧊
       </button>
-      <button id="laugh-button" onclick=alertFunction()>
+      <button class="button" id="laugh-button" onclick="laugh.play(), alertFunction()">
         <span id="laugh"></span>
         NOT A GOAL!
       </button>
-
+      
       <h5 id="caption">LOOK AT THIS GEM!</h5>
-      <p id="something">⬇️Drop Your Thoughts On The Comment Section Below⬇️</p>
+      <form id="comment-form" class="rightpane">
+        <p id="something">⬇️ Drop Your Comment to Enter a Chance to Win 2 Free Tickets To 2022 Champions League Final! ⬇️</p>
+        <label >Username:</label><br />
+        <input type="text" id="username" /><br />
+        <label for="comment">Comment: </label><br />
+        <input type="text" id="comment-box" /><br /><br />
+        <input id="submit" type="submit" value="submit" />
+      </form>
     </div>
-    <form id="comment-form">
-      <label>Username:</label><br>
-      <input type="text" id="username"><br>
-      <label for="comment">Comment: </label><br>
-      <input type="text" id="comment-box"><br><br>
-      <input type="submit" value="Submit">
-    </form> 
-    <div id='comment-section'></div>
+    <div id="comment-section" >Comments:</div>
+     </h1>
+  </div>
+</body>
 
-    <div id = "gif-container">
-    </div>
-  
-  </body>
 </html>
